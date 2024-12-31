@@ -6,15 +6,11 @@ import BrowserRouter from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <ChakraProvider>
 
-       <ChakraProvider>
+       <App />
 
-         <App />
-      
-       </ChakraProvider>
-    
-    </BrowserRouter>
+    </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
